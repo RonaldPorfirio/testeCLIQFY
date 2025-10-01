@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RImc4jT+XJc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\front-end\\service-csharp\\ReportsService\\ReportsService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ronald\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
+    "C:\\Users\\Ronald\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

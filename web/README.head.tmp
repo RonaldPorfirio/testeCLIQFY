@@ -1,0 +1,143 @@
+# Sistema de Ordens de Serviço
+
+Sistema completo de gerenciamento de ordens de serviço desenvolvido com React, Next.js e TypeScript.
+
+## 🚀 Funcionalidades
+
+- ✅ **Autenticação**: Sistema de login com proteção de rotas
+- ✅ **Listagem de Ordens**: Visualização com filtros, busca e paginação
+- ✅ **Detalhes com Timeline**: Acompanhamento completo do histórico de cada ordem
+- ✅ **Dashboard de Relatórios**: Análises e gráficos de desempenho
+- ✅ **React Query**: Gerenciamento eficiente de estado e cache
+- ✅ **TypeScript**: Tipagem completa em todo o projeto
+- ✅ **Testes Unitários**: Cobertura de componentes principais
+
+## 🛠️ Tecnologias
+
+- **Framework**: Next.js 14 (App Router)
+- **Linguagem**: TypeScript
+- **UI**: React 19 + Tailwind CSS v4
+- **Componentes**: shadcn/ui + Radix UI
+- **Estado**: React Query (@tanstack/react-query)
+- **Gráficos**: Recharts
+- **Testes**: Jest + React Testing Library
+- **Ícones**: Lucide React
+
+## 📦 Instalação
+
+\`\`\`bash
+# Instalar dependências
+npm install
+# ou
+pnpm install
+
+# Executar em desenvolvimento
+npm run dev
+
+# Executar testes
+npm test
+
+# Executar testes em modo watch
+npm run test:watch
+
+# Build para produção
+npm run build
+\`\`\`
+
+## 🔐 Credenciais de Teste
+
+Para acessar o sistema, use:
+
+- **Email**: admin@example.com
+- **Senha**: admin123
+
+## 📁 Estrutura do Projeto
+
+\`\`\`
+├── app/                      # Páginas Next.js (App Router)
+│   ├── login/               # Página de login
+│   ├── orders/              # Listagem e detalhes de ordens
+│   └── reports/             # Dashboard de relatórios
+├── components/              # Componentes React
+│   ├── orders/             # Componentes de ordens
+│   ├── reports/            # Componentes de relatórios
+│   └── ui/                 # Componentes UI (shadcn)
+├── contexts/               # Contextos React (Auth)
+├── lib/                    # Utilitários e configurações
+│   ├── api.ts             # Cliente API com mock
+│   ├── types.ts           # Tipos TypeScript
+│   └── query-provider.tsx # Provider React Query
+├── __tests__/             # Testes unitários
+└── hooks/                 # Custom hooks
+
+\`\`\`
+
+## 🧪 Testes
+
+O projeto inclui testes unitários para os principais componentes:
+
+- **OrderCard**: Testa renderização de cards de ordens
+- **Timeline**: Valida exibição de eventos cronológicos
+- **StatsCard**: Verifica cards de estatísticas
+
+Execute os testes com:
+
+\`\`\`bash
+npm test
+\`\`\`
+
+## 🎨 Design
+
+O sistema utiliza um tema dark profissional inspirado no Vercel, com:
+
+- Paleta de cores consistente e acessível
+- Componentes responsivos
+- Animações suaves
+- Tipografia clara e legível
+
+## 🔌 API
+
+O projeto está configurado para consumir uma API C# através do cliente em `lib/api.ts`. Durante o desenvolvimento, utiliza dados mock para facilitar o teste das funcionalidades.
+
+Para conectar à API real, configure a variável de ambiente:
+
+\`\`\`env
+NEXT_PUBLIC_API_URL=https://sua-api.com/api
+\`\`\`
+
+## 📊 Funcionalidades Detalhadas
+
+### Autenticação
+- Login com email/senha
+- Proteção de rotas
+- Gerenciamento de sessão com localStorage
+- Redirecionamento automático
+
+### Ordens de Serviço
+- Listagem paginada
+- Filtros por status e prioridade
+- Busca por título e cliente
+- Visualização de detalhes completos
+- Timeline de eventos
+
+### Relatórios
+- Estatísticas gerais
+- Gráficos de status e prioridade
+- Métricas de desempenho
+- Taxa de conclusão
+
+## 🤝 Contribuindo
+
+Este é um projeto de demonstração. Para uso em produção, considere:
+
+- Implementar autenticação real (JWT, OAuth)
+- Conectar à API backend
+- Adicionar mais testes (integração, e2e)
+- Implementar tratamento de erros robusto
+- Adicionar validação de formulários
+- Configurar CI/CD
+
+## 📝 Licença
+
+MIT
+
