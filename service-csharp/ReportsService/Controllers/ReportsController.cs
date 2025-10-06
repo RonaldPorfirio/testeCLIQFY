@@ -16,7 +16,7 @@ namespace ReportsService.Controllers
                 TotalWorkorders = 12,
                 Open = 5,
                 InProgress = 4,
-                Done = 3
+                Done = 3,
             };
 
             return Ok(report);

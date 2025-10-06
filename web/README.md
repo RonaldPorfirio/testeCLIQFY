@@ -2,17 +2,17 @@
 
 Sistema completo de gerenciamento de ordens de serviço desenvolvido com React, Next.js e TypeScript.
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-- ✅ **Autenticação**: Sistema de login com proteção de rotas
-- ✅ **Listagem de Ordens**: Visualização com filtros, busca e paginação
-- ✅ **Detalhes com Timeline**: Acompanhamento completo do histórico de cada ordem
-- ✅ **Dashboard de Relatórios**: Análises e gráficos de desempenho
-- ✅ **React Query**: Gerenciamento eficiente de estado e cache
-- ✅ **TypeScript**: Tipagem completa em todo o projeto
-- ✅ **Testes Unitários**: Cobertura de componentes principais
+-  **Autenticação**: Sistema de login com proteção de rotas
+-  **Listagem de Ordens**: Visualização com filtros, busca e paginação
+-  **Detalhes com Timeline**: Acompanhamento completo do histórico de cada ordem
+-  **Dashboard de Relatórios**: Análises e gráficos de desempenho
+-  **React Query**: Gerenciamento eficiente de estado e cache
+-  **TypeScript**: Tipagem completa em todo o projeto
+-  **Testes Unitários**: Cobertura de componentes principais
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - **Framework**: Next.js 14 (App Router)
 - **Linguagem**: TypeScript
@@ -23,7 +23,7 @@ Sistema completo de gerenciamento de ordens de serviço desenvolvido com React, 
 - **Testes**: Jest + React Testing Library
 - **Ícones**: Lucide React
 
-## 📦 Instalação
+## Instalação
 
 \`\`\`bash
 # Instalar dependências
@@ -44,14 +44,14 @@ npm run test:watch
 npm run build
 \`\`\`
 
-## 🔐 Credenciais de Teste
+## Credenciais de Teste
 
 Para acessar o sistema, use:
 
 - **Email**: admin@example.com
 - **Senha**: admin123
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 \`\`\`
 ├── app/                      # Páginas Next.js (App Router)
@@ -72,7 +72,7 @@ Para acessar o sistema, use:
 
 \`\`\`
 
-## 🧪 Testes
+##  Testes
 
 O projeto inclui testes unitários para os principais componentes:
 
@@ -86,7 +86,7 @@ Execute os testes com:
 npm test
 \`\`\`
 
-## 🎨 Design
+##  Design
 
 O sistema utiliza um tema dark profissional inspirado no Vercel, com:
 
@@ -95,7 +95,7 @@ O sistema utiliza um tema dark profissional inspirado no Vercel, com:
 - Animações suaves
 - Tipografia clara e legível
 
-## 🔌 API
+##  API
 
 O projeto está configurado para consumir uma API C# através do cliente em `lib/api.ts`. Durante o desenvolvimento, utiliza dados mock para facilitar o teste das funcionalidades.
 
@@ -105,7 +105,7 @@ Para conectar à API real, configure a variável de ambiente:
 NEXT_PUBLIC_API_URL=https://sua-api.com/api
 \`\`\`
 
-## 📊 Funcionalidades Detalhadas
+##  Funcionalidades Detalhadas
 
 ### Autenticação
 - Login com email/senha
@@ -125,21 +125,6 @@ NEXT_PUBLIC_API_URL=https://sua-api.com/api
 - Gráficos de status e prioridade
 - Métricas de desempenho
 - Taxa de conclusão
-
-## 🤝 Contribuindo
-
-Este é um projeto de demonstração. Para uso em produção, considere:
-
-- Implementar autenticação real (JWT, OAuth)
-- Conectar à API backend
-- Adicionar mais testes (integração, e2e)
-- Implementar tratamento de erros robusto
-- Adicionar validação de formulários
-- Configurar CI/CD
-
-## 📝 Licença
-
-MIT
 
 
 ## API (dev) - configuração rápida

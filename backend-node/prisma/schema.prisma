@@ -1,0 +1,93 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  admin
+  agent
+  viewer
+}
+
+enum WorkorderStatus {
+  pending
+  in_progress
+  completed
+  cancelled
+}
+
+enum WorkorderPriority {
+  low
+  medium
+  high
+  urgent
+}
+
+enum TimelineEventType {
+  created
+  status_change
+  assigned
+  comment
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  username     String   @unique
+  email        String   @unique
+  name         String
+  role         Role
+  passwordHash String
+  checkins     Checkin[]
+}
+
+model Workorder {
+  id             Int               @id @default(autoincrement())
+  title          String
+  description    String
+  status         WorkorderStatus   @default(pending)
+  priority       WorkorderPriority @default(medium)
+  clientName     String
+  clientEmail    String
+  assignedTo     String?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  completedAt    DateTime?
+  checkins       Checkin[]
+  timelineEvents TimelineEvent[]
+}
+
+model TimelineEvent {
+  id        Int               @id @default(autoincrement())
+  orderId   Int
+  type      TimelineEventType
+  description String
+  userId    Int?
+  userName  String?
+  metadata  Json?
+  timestamp DateTime @default(now())
+
+  order Workorder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+}
+
+model Checkin {
+  id          Int       @id @default(autoincrement())
+  workorderId Int
+  userId      Int?
+  note        String
+  createdAt   DateTime  @default(now())
+  latitude    Float?
+  longitude   Float?
+  photo       String?
+
+  workorder Workorder @relation(fields: [workorderId], references: [id], onDelete: Cascade)
+  user      User?     @relation(fields: [userId], references: [id])
+
+  @@index([workorderId])
+  @@index([userId])
+}

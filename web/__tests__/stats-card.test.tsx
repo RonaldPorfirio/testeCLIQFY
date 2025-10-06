@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import { StatsCard } from "@/components/reports/stats-card"
+import { StatsCard } from "@/components/domain/reports/stats-card"
 import { FileText } from "lucide-react"
 
 describe("StatsCard", () => {

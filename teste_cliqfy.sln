@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service-csharp", "service-csharp", "{F4C34F06-D1B5-6857-1A74-7FF08D37C09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsService", "service-csharp\ReportsService\ReportsService.csproj", "{753E3EB8-8823-15D4-36D2-02786710D626}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{753E3EB8-8823-15D4-36D2-02786710D626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753E3EB8-8823-15D4-36D2-02786710D626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753E3EB8-8823-15D4-36D2-02786710D626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753E3EB8-8823-15D4-36D2-02786710D626}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{753E3EB8-8823-15D4-36D2-02786710D626} = {F4C34F06-D1B5-6857-1A74-7FF08D37C09E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FA2E91F-F9EC-44DD-85C0-B44DFCB62027}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: [backend-node, web, mobile]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: ${{ matrix.project }}/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.project }}
+        run: npm install
+
+      - name: Generate Prisma Client
+        if: matrix.project == 'backend-node'
+        working-directory: ${{ matrix.project }}
+        run: npm run prisma:generate
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/local
+
+      - name: Run project checks
+        working-directory: ${{ matrix.project }}
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/local
+        run: |
+          if [ "${{ matrix.project }}" = "backend-node" ]; then
+            npm run build
+            npm run test -- --runInBand
+          elif [ "${{ matrix.project }}" = "web" ]; then
+            npm run lint
+            npm run test -- --runInBand
+          else
+            npx tsc --noEmit
+          fi

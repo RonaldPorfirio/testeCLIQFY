@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\front-end\\service-csharp\\ReportsService\\ReportsService.csproj": {}
+    "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\teste_cliqfy\\service-csharp\\ReportsService\\ReportsService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\front-end\\service-csharp\\ReportsService\\ReportsService.csproj": {
+    "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\teste_cliqfy\\service-csharp\\ReportsService\\ReportsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\front-end\\service-csharp\\ReportsService\\ReportsService.csproj",
+        "projectUniqueName": "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\teste_cliqfy\\service-csharp\\ReportsService\\ReportsService.csproj",
         "projectName": "ReportsService",
-        "projectPath": "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\front-end\\service-csharp\\ReportsService\\ReportsService.csproj",
+        "projectPath": "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\teste_cliqfy\\service-csharp\\ReportsService\\ReportsService.csproj",
         "packagesPath": "C:\\Users\\Ronald\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\front-end\\service-csharp\\ReportsService\\obj\\",
+        "outputPath": "C:\\Users\\Ronald\\Documents\\04 - Teste CLIQFY\\teste_cliqfy\\service-csharp\\ReportsService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -47,12 +47,12 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.7, )"
             }
           },
           "imports": [

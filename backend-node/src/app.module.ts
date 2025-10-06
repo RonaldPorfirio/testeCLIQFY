@@ -1,9 +1,10 @@
-import { Module } from '@nestjs/common';
+﻿import { Module } from '@nestjs/common';
 import { LoggerModule } from 'nestjs-pino';
-import { WorkordersModule } from './workorders/workorders.module';
-import { ReportsModule } from './reports/reports.module';
-import { AuthModule } from './auth/auth.module';
-import { CheckinsModule } from './checkins/checkins.module';
+import { PrismaModule } from './prisma/prisma.module';
+import { WorkordersModule } from './modules/workorders/workorders.module';
+import { ReportsModule } from './modules/reports/reports.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { CheckinsModule } from './modules/checkins/checkins.module';
 
 @Module({
   imports: [
@@ -13,10 +14,11 @@ import { CheckinsModule } from './checkins/checkins.module';
         transport: { target: 'pino-pretty' },
       },
     }),
+    PrismaModule,
     WorkordersModule,
     ReportsModule,
     AuthModule,
     CheckinsModule,
   ],
 })
-export class AppModule { }
+export class AppModule {}
